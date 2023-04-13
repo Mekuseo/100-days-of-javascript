@@ -1,3 +1,4 @@
+/* style.css */
 * {
   margin: 0;
   padding: 0;
@@ -5,66 +6,89 @@
 }
 
 body {
-  background-color: #f1f1f1;
-  font-family: 'Poppins', sans-serif;
-}
-
-body {
-  max-width: 600px;
-  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .card {
-  background-color: blue;
-  width: 70%;
-  height: 150px;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 400px;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card-header {
+  font-size: 24px;
   color: white;
-  font-size: 30px;
-  margin-bottom: 5px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .card-body {
-  width: 100%;
+  color: white;
   text-align: center;
 }
 
 .count {
-  color: white;
-  font-size: 30px;
-  margin-bottom: 5px;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 hr {
-  margin-bottom: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
 }
 
 .btn {
-  background-color: white;
-  color: blue;
-  border: none;
-  padding: 10px 15px;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid white;
   border-radius: 5px;
   cursor: pointer;
-  margin-bottom: 10px;
-}
-
-.btn {
-  margin-right: 10px;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #f1f1f1;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn:active {
+  scale: 0.9;
+}
+
+.subtract {
+  background-color: #e74c3c;
+}
+
+.subtract:hover {
+  background-color: #c0392b;
+}
+
+.reset {
+  background-color: #3498db;
+}
+
+.reset:hover {
+  background-color: #2980b9;
+}
+
+.add {
+  background-color: #2ecc71;
+}
+
+.add:hover {
+  background-color: #27ae60;
 }
