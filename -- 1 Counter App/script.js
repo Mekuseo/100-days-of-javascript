@@ -1,31 +1,9 @@
-const buttons = document.querySelectorAll('.btn');
-const counter = document.querySelector('.count');
-const add = document.querySelector('.add');
-const subtract = document.querySelector('.subtract');
-const reset = document.querySelector('.reset');
+const count = document.querySelector(".count");
+const btn = document.querySelector(".btn");
 
-buttons.forEach(function(button){
-  button.addEventListener('click', function(e) {
-    const styles = e.currentTarget.classList;
-    if(styles.contains('subtract')) {
-      counter.innerHTML--;
-      countColors();
-    }else if (styles.contains('add')) {
-      counter.innerHTML++;
-      countColors();
-    }else {
-      counter.innerHTML = 0;
-      countColors();
-    }
-  })
+btn.addEventListener("click",(e)=>{
+  e.preventDefault();
+  let hex = Math.random().toString(16).slice(2, 8);
+  count.innerHTML = `#${hex}`;
+  document.body.style.backgroundColor = `#${hex}`;
 })
-
-const countColors = () => {
-  if(counter.innerHTML > 0) {
-    counter.style.color = 'green';
-  }else if (counter.innerHTML < 0) {
-    counter.style.color = 'red';
-  }else {
-    counter.style.color = 'white';
-  }
-}

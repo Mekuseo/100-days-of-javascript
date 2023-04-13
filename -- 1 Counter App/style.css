@@ -47,11 +47,11 @@ hr {
 
 .btns {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .btn {
-  background-color: transparent;
+  background-color: red;
   color: white;
   font-size: 18px;
   padding: 10px;
