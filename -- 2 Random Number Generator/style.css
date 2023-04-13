@@ -1,0 +1,94 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  width: 400px;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-body {
+  color: white;
+  text-align: center;
+}
+
+.count {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn:active {
+  scale: 0.9;
+}
+
+.subtract {
+  background-color: #e74c3c;
+}
+
+.subtract:hover {
+  background-color: #c0392b;
+}
+
+.reset {
+  background-color: #3498db;
+}
+
+.reset:hover {
+  background-color: #2980b9;
+}
+
+.add {
+  background-color: #2ecc71;
+}
+
+.add:hover {
+  background-color: #27ae60;
+}
