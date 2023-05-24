@@ -1,0 +1,39 @@
+body {
+  background-color: #34b6dd;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 10px auto;
+  width: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.coupon {
+  width: 100%;
+  text-align: center;
+}
+
+input {
+  border: 2px dashed #bcbcbc;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 50%;
+  color: #bcbcbc;
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+}
